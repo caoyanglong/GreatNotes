@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.zhefang.assignment2.widget.CustomTitleView
+            android:id="@+id/apptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name or tag"
+            android:focusable="false"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textColor="@color/fisrt_text"
+            android:text="You Can Create Your List"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_below="@id/apptitle"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:padding="15dp"
+            android:background="@drawable/circle"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:onClick="login"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+    </RelativeLayout>
+</layout>
